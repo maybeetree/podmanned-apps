@@ -1,0 +1,21 @@
+FROM ghcr.io/void-linux/void-glibc
+
+RUN xbps-install -Syu \
+	alsa-utils \
+	alsa-pipewire \
+	wine \
+	fluidsynth `# for playing the BGM ` \
+	\
+	`# Maybe needed for hw accel?? ` \
+	mesa-vulkan-intel \
+	vulkan-loader \
+	libglvnd \
+	xvinfo \
+	xcb-util-renderutil \
+	glxinfo \
+	mesa-dri
+
+WORKDIR /app
+CMD ["/app/run.sh"]
+
+
