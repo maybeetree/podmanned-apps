@@ -14,5 +14,6 @@ RUN \
 
 WORKDIR /pwd
 
-ENTRYPOINT ["/usr/bin/typst"]
+ENTRYPOINT ["/app/run.sh"]
+#ENTRYPOINT ["/usr/bin/typst"]
 
