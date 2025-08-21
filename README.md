@@ -67,5 +67,14 @@ Python package that hosts the PWD as http,
 and allows clients to upload files.
 `run.sh` script also helpfully prints your local IP address.
 
+### nitropy
+
+Command-line tool for Nitrokey 2FA dongles.
+Includes `install-udev-rule.sh` script which downloads
+official nitrokey udev rule and installs it.
+When the command is run,
+`udevadm` is used to find which of `/dev/hidraw*` is the nitrokey
+and forwards only it to the container.
+
 
 
