@@ -63,7 +63,7 @@ Typesetting engine
 
 ### uploadserver
 
-Python package that hosts the PWD as http,
+[Python](Python.md) package that hosts the PWD as http,
 and allows clients to upload files.
 `run.sh` script also helpfully prints your local IP address.
 
@@ -75,6 +75,13 @@ official nitrokey udev rule and installs it.
 When the command is run,
 `udevadm` is used to find which of `/dev/hidraw*` is the nitrokey
 and forwards only it to the container.
+
+### yt-dlp
+
+yt-dlp video downloader, with ffmpeg present.
+Includes an `update` script that updates `yt-dlp`
+using pip inside the image without
+rebuilding it from scratch.
 
 
 
