@@ -2,10 +2,10 @@ FROM ghcr.io/void-linux/void-glibc
 
 RUN \
 	xbps-install -Syu xbps && \
-	xbps-install -Syu bitmap && \
+	xbps-install -Syu pandoc && \
 	:
 
-WORKDIR /pwd
+WORKDIR /root
 
-ENTRYPOINT ["/usr/bin/bitmap"]
+ENTRYPOINT ["/usr/bin/pandoc"]
 
