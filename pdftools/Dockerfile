@@ -3,7 +3,8 @@ FROM nixos/nix:latest
 RUN nix-env -iA \
 	nixpkgs.pdftk \
 	nixpkgs.img2pdf \
-	nixpkgs.pandoc
+	nixpkgs.pandoc \
+	nixpkgs.ocrmypdf
 
 COPY ./app /app
 WORKDIR /pwd
