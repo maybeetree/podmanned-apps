@@ -1,4 +1,4 @@
 #!/bin/sh
 
-podman run -v "$PWD:/pwd" --rm maybetree-pdftools "$0" "$@"
+podman run --init -v "$PWD:/pwd" --rm maybetree-pdftools "$0" "$@"
 
