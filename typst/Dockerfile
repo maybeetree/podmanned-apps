@@ -5,6 +5,8 @@ WORKDIR /app
 RUN \
 	apk add --no-cache \
 		font-noto-emoji \
+		font-noto-cjk \
+		font-noto-all \
 		fontconfig \
 		&& \
 	apk add --no-cache \
